@@ -1,13 +1,28 @@
-const calculateFactorial = (/*recibe*/) => {
-    //Code
-}
+const calculateFactorial = (numero) => {
+    
+    let result = 1;
+
+    for (let i = 1; i <= numero; i++) {
+        result*= i;
+    }
+
+    return result;
+};
 
 const requestNumber = () => {
-    //Code
-}
+    let numero = parseInt(prompt("Ingrese un número mayor a 0: "));
+    if (numero < 0 || isNaN(numero)) {
+        alert("Número inválido");
+    }
+    return numero;
+};
 
 const main = () => {
-    //Code
-}
+    const numero = requestNumber();
+    if (numero != 0) {
+        const result = calculateFactorial(numero);
+        alert("El resultado es: " + result);
+    }
+};
 
 main();
