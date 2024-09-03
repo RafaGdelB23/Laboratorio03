@@ -1,7 +1,7 @@
 
 const plus = (a, b) => {
     var sum = a + b;
-    alert(sum);
+    return sum;
 };
 const subtract = (a, b) =>{
     var rest = a - b;
@@ -25,16 +25,20 @@ const selectOperation = () => {
     var opcion = prompt("Ingrese la operación que le gustaría realizar: ")
     switch(opcion){
         case '1':
-            plus(a, b);
+            plus(sum);
+            alert(plus);
             break;
         case '2':
-            subtract(a, b);
+            subtract(rest);
+            alert(subtract);
             break;
         case '3':
-            multiply(a, b);
+            multiply(multiply);
+            alert(multiply);
             break;
         case '4':
-            split(a, b);
+            split(split);
+            alert(split);
             break;
         default:
             alert('Escoja una opción valida');
